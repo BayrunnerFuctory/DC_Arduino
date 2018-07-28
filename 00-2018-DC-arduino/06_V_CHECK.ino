@@ -8,8 +8,8 @@ bool vertical_check_up(){
 
   if(v1==false && v2==true){
     result = true;
-    out_do(led1,'L');
-    out_do(led2,'H');
+    led_off(led1);
+    led_on(led2);
   }else{
     result = false;
   }
@@ -27,8 +27,8 @@ bool vertical_check_down(){
   
  if(v1==true && v2==false){
     result = true;
-    out_do(led1,'H');
-    out_do(led2,'L');
+    led_on(led1);
+    led_off(led2);
   }else{
     result = false;
   }
@@ -46,12 +46,12 @@ bool vertical_check_other(){
   
  if(v1==true && v2==true){
     result = true;
-    out_do(led1,'H');
-    out_do(led2,'H');
+    led_on(led1);
+    led_on(led2);
   }else if(v1==false && v2==false){
      result = true;
-     out_do(led1,'L');
-     out_do(led2,'L');
+     led_off(led1);
+     led_off(led2);
   }else{
     result = false;
   }  

@@ -3,14 +3,14 @@
 #include<Servo.h>
 
 // Define pinname pinnum
-#define horizon2_in 14 //A0
-#define horizon1_in 15 //A1
-#define vertical2_in 16 //A2
-#define vertical1_in 17 //A3
+#define horizon2_in 14 //A0 水平用入力1bit目
+#define horizon1_in 15 //A1　水平用入力2bit目
+#define vertical2_in 16 //A2　垂直用入力1bit目
+#define vertical1_in 17 //A3　垂直用入力2bit目
 //#define non 18 //A4
 //#define non 19 //A5
-//#define non A6
-//#define non A7
+//#define non A6 //Analog onry
+//#define non A7 //Analog onry
 //#define non 0 //D0
 //#define non 1 //D1
 #define led4 2 //D2

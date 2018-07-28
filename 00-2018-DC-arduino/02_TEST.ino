@@ -23,32 +23,33 @@ void testloop() {
         Serial.println("vertical_other_false");
         if (vertical_check_up() == true) {
           Serial.println("Vertical_up");
-//          vertical_moter_out('u');
+          vertical_moter_out('u');
         } else if (vertical_check_down() == true) {
           Serial.println("Vertical_down");
-//          vertical_moter_out('d');
+          vertical_moter_out('d');
         }
       } else {
         Serial.println("Vertical_Stop");
-//        vertical_moter_out('s');
+        vertical_moter_out('s');
         if (horizontalmode == true) {
           Serial.println("horizon_mode_ON");
           if (horizon_check_other() == false) {
             Serial.println("horizon_other_false");
             if (horizon_check_right() == true) {
               Serial.println("horizon_right");
-//               horizon_moter_out('r');
+               horizon_moter_out('r');
             } else if (horizon_check_left() == true) {
               Serial.println("horizon_left");
-//              horizon_moter_out('l');
+              horizon_moter_out('l');
             }
           } else {
             Serial.println("horizon_Stop");
-//              horizon_moter_out('s');
+              horizon_moter_out('s');
           }
         }
       }
-      delay(1000);
+    }else{
+      Serial.println("metoro=wait");
     }
   }
 }

@@ -8,8 +8,8 @@ bool horizon_check_right(){
 
   if(h1==false && h2==true){
     result = true;
-    out_do(led3,'L');
-    out_do(led4,'H');
+    led_off(led3);
+    led_on(led4);
   }else{
     result = false;
   }
@@ -27,8 +27,8 @@ bool horizon_check_left(){
 
   if(h1==true && h2==false){
     result = true;
-    out_do(led3,'H');
-    out_do(led4,'L');
+    led_on(led3);
+    led_off(led4);
   }else{
     result = false;
   }
@@ -47,12 +47,12 @@ bool horizon_check_other(){
   
  if(h1==true && h2==true){
     result = true;
-    out_do(led3,'H');
-    out_do(led4,'H');
+    led_on(led3);
+    led_on(led4);
   }else if(h1==false && h2==false){
     result = true;
-    out_do(led3,'L');
-    out_do(led4,'L');
+    led_off(led3);
+    led_off(led4);
   }else{
     result = false;
   }
