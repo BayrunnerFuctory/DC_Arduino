@@ -20,11 +20,11 @@
 #define vertical1_out 6 //D6
 #define led2 7 //D7
 #define led1 8 //D8
-//#define non 9 //D9
-//#define non 10 //D10
+#define horizon1_out 9 //D9
+#define horizon2_out 10 //D10
 //#define non 11 //D11
-#define horizon1_out 12 //D12
-#define horizon2_out 13 //D13
+//#define non 12 //D12
+//#define non 13 //D13
 
 // servo
 //Noting Servo
