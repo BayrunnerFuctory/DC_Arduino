@@ -43,7 +43,8 @@ bool horizontalmode = false; //horizontalmodeON=true; (nomal)OFF=false;
 Metro mainmetro = Metro(5); //Metro( ms );
 
 
-
+//Mortor Speed(%)
+int MSpeed = 50;
 
 
 void setup() {
