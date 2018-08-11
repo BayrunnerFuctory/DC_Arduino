@@ -5,8 +5,8 @@ void mainloop() {
   while (offErr) {
     if (mainmetro.check() == 1 ) {
       //mainloop
-      offErr = verticalmotor();
-      if (horizontalmode == true) {
+      offErr = verticalmotor();        
+      if (horizontalmode == true && vertical_check_other() == true) {
         offErr = horizontalmotor();
       }
     }

@@ -36,16 +36,14 @@ bool testmode = false; //nomal=false; testingmode=true;
 bool startdelay = false; //nomal=false; delaymode=true;
 //水平動作モード
 bool horizontalmode = false; //horizontalmodeON=true; (nomal)OFF=false; 
+  
+//Mortor Speed init
+int MSpeed = 0;
 
 
 //Metro Setting
 //Main Loop Timer
 Metro mainmetro = Metro(5); //Metro( ms );
-
-
-//Mortor Speed(%)
-int MSpeed = 50;
-
 
 void setup() {
   // put your setup code here, to run once:
@@ -64,6 +62,10 @@ void setup() {
   pinMode(led2,OUTPUT);
   pinMode(led3,OUTPUT);
   pinMode(led4,OUTPUT);
+
+  
+  //Mortor Speed(%)
+  MSpeed = Speed(50);
 
   Serial.begin(9600);
 

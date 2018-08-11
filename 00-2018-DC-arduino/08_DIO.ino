@@ -37,7 +37,6 @@ void out_do(int pinnum, char HL){
       //nothing
     break;
     
-  }
-  
+  }  
 }
 
